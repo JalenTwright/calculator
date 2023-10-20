@@ -1,0 +1,286 @@
+body{
+    background-color: #505050
+}
+
+.calculator-case{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    border-bottom: 75px;
+    /*background-color:#62afb7;*/
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 425px;
+    height: 550px;
+    padding-top: 35px;
+    border: 3px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #62afb7;
+    box-shadow: 0px 0px 2px 3px #282828;
+}
+
+.input-screen{
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    height: 135px;
+    width: 350px;
+    background-color: 	#d9ffea;
+    margin-bottom:30px;
+}
+
+.input-top {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 40px;
+    height: 70px;   
+}
+
+.input-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 40px;
+    height: 70px;  
+}
+
+#all-button{
+    display: grid; 
+    border-style: solid;
+    border-radius: 15px;
+    border-color: black;
+    grid-template-columns: 67px 67px 67px 67px 67px;
+    grid-template-rows: 77px 77px 77px 77px;
+    background-color: #282828;
+} 
+    
+    .equation-buttons {
+        display: grid;
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+    .delete-buttons {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding-top: 4px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 60px;
+        border-radius: 15px;
+    }
+
+    .number-buttons {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 5;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .equation-buttons button { 
+        display: flex;
+        border-style: solid;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        margin: 1px;
+    }
+
+    .num {
+        margin: 8px;
+        background-color: #63bda4;
+    }
+
+    .num:hover {
+        background: #59aa94;
+    }
+
+    .row-one {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .row-two {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .row-three {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .row-four {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .eq {
+        background-color: 	#63bda4;
+        cursor: pointer;
+    }
+
+    .eq:hover {
+        background-color: #59aa94;
+    }
+
+
+    .num {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-style: solid;
+        height: 35px;
+        width: 56px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .empty-space {
+        color:#282828;
+    }
+
+    .delete-buttons button {
+        border: solid;
+        border-radius: 15px;
+        padding: 21px;
+        padding-left: 35px;
+        padding-right: 35px;
+        cursor: pointer;
+    }
+
+    .clear {
+        background-color: #f20553;
+    }
+
+    .clear:hover {
+        background-color: #da054b;
+    }
+
+    .delete {
+        background-color:#ffec47
+    }
+
+    .delete:hover {
+        background-color:#e6d440;
+    }
+
+    button {
+        border-color: black;
+    }
+    
+    
+    
+    /*flex box height height: 310px;
+    width: 375px; 
+}
+
+.equation-buttons {
+    /*display: grid;
+    grid-column-start: ;
+    grid-column-end:;
+
+}
+
+/*.number-buttons{
+    display: flex;
+    flex-direction: column;
+    padding-top:47px;
+    border-style: solid;
+}
+
+.delete-buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    height: 45px;
+    width: 300px;
+    font-size: 35px;
+       
+}
+
+.clear {
+    display: flex;
+    justify-content: center;
+    border-style: 2px solid;
+    height: 45px;
+    width: 187.5px;
+    background-color: red;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    height: 45px;
+    width: 187.5px;
+    background-color: yellow;
+    
+}
+
+.equation-buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+    width: 60px;
+    font-size: 30px;
+}
+
+.divide {
+    border-style: solid;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.multiply {
+    border-style: solid;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subtract {
+    border-style: solid;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add {
+    border-style: solid;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.equal {
+    border-style: solid;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
