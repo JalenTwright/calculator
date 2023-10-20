@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel ="stylesheet" type="text/css" href="styles.css">
     <script src ="javaScript.js" defer></script>
 </head>
 <body>
-    
+    <div class="calculator-case">
+        <div class="calculator">
+            <div class="input-screen">
+                <div class="input-top"></div>
+                <div class="input-bottom"></div>
+            </div>
+                <div id="all-button">
+                    <div class="number-buttons">
+                            <div class="row-one">
+                                <button type="digit" id="one" class="num">1</button>
+                                <button type="digit" id="two" class="num">2</button>
+                                <button type="digit" id="three" class="num">3</button>
+                            </div>
+                            <div class="row-two">
+                                <button type="digit" id="four" class="num">4</button>
+                                <button type="digit" id="five" class="num">5</button>
+                                <button type="digit" id="six" class="num">6</button>
+                            </div>
+                            <div class="row-three">
+                                <button type="digit" id="seven" class="num">7</button>
+                                <button type="digit" id="eight" class="num">8</button>
+                                <button type="digit" id="nine" class="num">9</button>
+                            </div>
+                                <div class="row-four">
+                                <div class="empty-space">JW</div>
+                                <button type="digit" id="0" class="num">0</button>
+                                <button data-action="digit" id="dec" class="num">.</button>
+                                </div>
+                    </div>
+                    <div class="delete-buttons">
+                        <button id ="nuke" class="clear">clear</button>
+                        <button id ="back" class="delete">⌫</button>
+                    </div>
+                    <div class="equation-buttons">
+                        <button id="divide"class="eq"> ÷ </button>
+                        <button id="multiply" class="eq"> x </button>
+                        <button id="subtract" class="eq"> - </button>
+                        <button id="add" class="eq"> + </button>
+                        <button id="equal" class="eq"> = </button>
+                    </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
